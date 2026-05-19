@@ -1,0 +1,30 @@
+[project]
+name = "cite-or-lie"
+version = "0.1.0"
+description = "A grounded citation auditor for AI answer engines: every claimed citation in a Mimos report is verified against the answer engine's own retr"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    { name = "Tarun Aditya Kusupati" }
+]
+dependencies = []
+
+[project.scripts]
+cite-or-lie = "cite_or_lie.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.0",
+    "ruff>=0.15.0",
+]
+
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"

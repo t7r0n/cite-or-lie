@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/cite_or_lie/__init__.py
+src/cite_or_lie/cli.py
+src/cite_or_lie/core.py
+src/cite_or_lie.egg-info/PKG-INFO
+src/cite_or_lie.egg-info/SOURCES.txt
+src/cite_or_lie.egg-info/dependency_links.txt
+src/cite_or_lie.egg-info/entry_points.txt
+src/cite_or_lie.egg-info/top_level.txt
+tests/test_workflow.py
