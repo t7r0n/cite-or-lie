@@ -1,2 +1,0 @@
-[console_scripts]
-cite-or-lie = cite_or_lie.cli:main
