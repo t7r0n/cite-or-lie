@@ -1,37 +1,37 @@
 {
-  "company": "Mimos",
+  "company": "Cite Or Lie",
   "repo": "cite-or-lie",
   "metrics": [
-    "mimos_coverage",
-    "hidden_risk",
-    "cites_precision",
-    "domain_latency"
+    "evidence_coverage",
+    "handoff_risk",
+    "claim_precision",
+    "review_latency"
   ],
   "failure_modes": [
-    "mimos_drift",
-    "hidden_gap",
-    "cites_misroute",
-    "domain_blindspot"
+    "evidence_drift",
+    "handoff_gap",
+    "claim_misroute",
+    "review_blindspot"
   ],
   "domain_archetypes": [
     {
-      "name": "mimos evidence replay",
-      "trigger": "mimos signal changes while hidden context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "hidden boundary probe",
-      "trigger": "hidden handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "cites regression harness",
-      "trigger": "cites behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "domain operator packet",
-      "trigger": "domain output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],

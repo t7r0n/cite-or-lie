@@ -1,69 +1,73 @@
 {
-  "company": "Mimos",
+  "company": "Cite Or Lie",
   "repo": "cite-or-lie",
   "terms": [
-    "mimos",
-    "hidden",
-    "cites",
-    "domain",
-    "might",
-    "citing",
-    "retrieval",
-    "surfaced"
+    "evidence",
+    "workflow",
+    "review",
+    "claims",
+    "fixtures",
+    "replay",
+    "handoff",
+    "trace",
+    "policy",
+    "decision",
+    "coverage",
+    "latency"
   ],
   "metrics": [
-    "mimos_coverage",
-    "hidden_risk",
-    "cites_precision",
-    "domain_latency"
+    "evidence_coverage",
+    "handoff_risk",
+    "claim_precision",
+    "review_latency"
   ],
   "failure_modes": [
-    "mimos_drift",
-    "hidden_gap",
-    "cites_misroute",
-    "domain_blindspot"
+    "evidence_drift",
+    "handoff_gap",
+    "claim_misroute",
+    "review_blindspot"
   ],
-  "evidence_density": 17.75,
+  "evidence_density": 19.5,
   "pressure_index": 0.3167,
   "blocked_share": 0.0972,
   "review_share": 0.1319,
   "top_leverage_points": [
     {
       "rank": 1,
-      "scenario": "mimos evidence replay",
-      "metric": "mimos_coverage",
-      "failure_mode": "mimos_drift",
+      "scenario": "evidence replay",
+      "metric": "evidence_coverage",
+      "failure_mode": "evidence_drift",
       "evidence": "ev_0044",
       "operator_action": "block release until cited evidence is regenerated",
       "severity": 2.611
     },
     {
       "rank": 2,
-      "scenario": "domain operator packet",
-      "metric": "hidden_risk",
-      "failure_mode": "hidden_gap",
-      "evidence": "ev_0055",
+      "scenario": "review operator packet",
+      "metric": "handoff_risk",
+      "failure_mode": "handoff_gap",
+      "evidence": "ev_0143",
       "operator_action": "accept only if decision claims cite fixture evidence",
       "severity": 2.556
     },
     {
       "rank": 3,
-      "scenario": "cites regression harness",
-      "metric": "cites_precision",
-      "failure_mode": "cites_misroute",
-      "evidence": "ev_0110",
+      "scenario": "claim regression harness",
+      "metric": "claim_precision",
+      "failure_mode": "claim_misroute",
+      "evidence": "ev_0022",
       "operator_action": "open a regression issue with trace and benchmark delta",
       "severity": 2.528
     },
     {
       "rank": 4,
-      "scenario": "hidden boundary probe",
-      "metric": "domain_latency",
-      "failure_mode": "domain_blindspot",
-      "evidence": "ev_0121",
+      "scenario": "handoff boundary probe",
+      "metric": "review_latency",
+      "failure_mode": "review_blindspot",
+      "evidence": "ev_0077",
       "operator_action": "route to reviewer with evidence packet",
       "severity": 2.528
     }
   ],
-  "readout": "Mimos gets a local, deterministic pressure test around mimos, hidden, and cites. The useful part is the repeatable evidence path from fixture to failure to operator action."
+  "readout": "This local harness runs a deterministic pressure test around evidence, workflow, and review. The useful part is the repeatable evidence path from fixture to failure to operator action."
 }

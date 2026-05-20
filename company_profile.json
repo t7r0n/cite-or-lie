@@ -1,75 +1,61 @@
 {
-  "company": "Mimos",
-  "company_slug": "mimos",
+  "company": "Cite Or Lie",
+  "company_slug": "cite-or-lie",
   "repo": "cite-or-lie",
   "package": "cite_or_lie",
   "cli": "cite-or-lie",
   "title": "Cite Or Lie",
-  "problem": "Every AEO tool \u2014 including Mimos \u2014 has the same hidden bug: when an LLM cites a domain, it might be citing (a) a retrieval surfaced by the answer engine's grounding (Bing / Perplexity index), (b) a training set memorization, or (c) a generation hallucination with a plausible looking URL. For a regulated wealth management or telehealth firm, distinction (a) vs. (c) is the difference between \"we're winning AI search\" and \"we have a compliance incident in the making.",
-  "direction": "A grounded citation auditor for AI answer engines: every claimed citation in a Mimos report is verified against the answer engine's own retrieval trace (when available) and a deterministic re prompt protocol, returning a per citation (grounded | memorized | hallucinated) verdict with confidence \u2014 the compliance substrate AEO has been missing.",
-  "why": "cite or lie won't. It positions Mimos's compliance moat as measurable. Until now the compliance pitch is qualitative. The grounded citation verdict turns it into a defensible number a GC can sign off on.",
+  "problem": "Every AEO tool - including Cite Or Lie - has the same hidden bug: when an LLM cites a domain, it might be citing (a) a retrieval surfaced by the answer engine's grounding (Bing / Perplexity index), (b) a training set memorization, or (c) a generation hallucination with a plausible looking URL. For a regulated wealth management or telehealth firm, distinction (a) vs. (c) is the difference between \"we're winning AI search\" and \"we have a compliance incident in the making.",
+  "direction": "A grounded citation auditor for AI answer engines: every claimed citation in a Cite Or Lie report is verified against the answer engine's own retrieval trace (when available) and a deterministic re prompt protocol, returning a per citation (grounded | memorized | hallucinated) verdict with confidence - the compliance substrate AEO has been missing.",
+  "why": "This repository is intentionally project-branded rather than company-branded. It focuses on deterministic replay, source-grounded analysis, and reviewer-visible evidence paths.",
   "terms": [
-    "mimos",
-    "hidden",
-    "cites",
-    "domain",
-    "might",
-    "citing",
-    "retrieval",
-    "surfaced",
-    "engine",
-    "grounding",
-    "perplexity",
-    "index",
-    "training",
-    "memorization",
-    "generation",
-    "hallucination",
-    "looking",
-    "regulated"
+    "evidence",
+    "workflow",
+    "review",
+    "claims",
+    "fixtures",
+    "replay",
+    "handoff",
+    "trace",
+    "policy",
+    "decision",
+    "coverage",
+    "latency"
   ],
   "metrics": [
-    "mimos_coverage",
-    "hidden_risk",
-    "cites_precision",
-    "domain_latency"
+    "evidence_coverage",
+    "handoff_risk",
+    "claim_precision",
+    "review_latency"
   ],
   "failure_modes": [
-    "mimos_drift",
-    "hidden_gap",
-    "cites_misroute",
-    "domain_blindspot"
+    "evidence_drift",
+    "handoff_gap",
+    "claim_misroute",
+    "review_blindspot"
   ],
   "archetypes": [
     {
-      "name": "mimos evidence replay",
-      "trigger": "mimos signal changes while hidden context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "hidden boundary probe",
-      "trigger": "hidden handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "cites regression harness",
-      "trigger": "cites behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "domain operator packet",
-      "trigger": "domain output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
-  "sources": [
-    "https://www.ycombinator.com/companies/mimos",
-    "https://www.startuphub.ai/startups/mimos/",
-    "https://www.fondo.com/blog/mimos-launches",
-    "https://www.linkedin.com/in/michael-korovkin/",
-    "https://www.linkedin.com/in/rohit-sirosh/",
-    "https://aiclicks.io/blog/best-ai-search-monitoring-tools-for-chatgpt",
-    "https://cloud.google.com/vertex-ai/generative-ai/docs/grounding/overview"
-  ],
+  "sources": [],
   "github_url": "https://github.com/t7r0n/cite-or-lie"
 }

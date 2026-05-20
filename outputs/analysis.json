@@ -1,5 +1,5 @@
 {
-  "company": "Mimos",
+  "company": "Cite Or Lie",
   "repo": "cite-or-lie",
   "cases": 144,
   "status_counts": {
@@ -9,53 +9,53 @@
   },
   "clusters": [
     {
-      "scenario": "cites regression harness",
+      "scenario": "claim regression harness",
       "cases": 36,
       "blocks": 3,
       "reviews": 5,
       "mean_severity": 2.528,
-      "mean_score": 0.3874,
-      "top_evidence_id": "ev_0110",
+      "mean_score": 0.3885,
+      "top_evidence_id": "ev_0022",
       "recommended_action": "open a regression issue with trace and benchmark delta"
     },
     {
-      "scenario": "domain operator packet",
-      "cases": 36,
-      "blocks": 4,
-      "reviews": 5,
-      "mean_severity": 2.556,
-      "mean_score": 0.4116,
-      "top_evidence_id": "ev_0055",
-      "recommended_action": "accept only if decision claims cite fixture evidence"
-    },
-    {
-      "scenario": "hidden boundary probe",
-      "cases": 36,
-      "blocks": 3,
-      "reviews": 4,
-      "mean_severity": 2.528,
-      "mean_score": 0.3866,
-      "top_evidence_id": "ev_0121",
-      "recommended_action": "route to reviewer with evidence packet"
-    },
-    {
-      "scenario": "mimos evidence replay",
+      "scenario": "evidence replay",
       "cases": 36,
       "blocks": 4,
       "reviews": 5,
       "mean_severity": 2.611,
-      "mean_score": 0.4084,
+      "mean_score": 0.402,
       "top_evidence_id": "ev_0044",
       "recommended_action": "block release until cited evidence is regenerated"
+    },
+    {
+      "scenario": "handoff boundary probe",
+      "cases": 36,
+      "blocks": 3,
+      "reviews": 4,
+      "mean_severity": 2.528,
+      "mean_score": 0.3849,
+      "top_evidence_id": "ev_0077",
+      "recommended_action": "route to reviewer with evidence packet"
+    },
+    {
+      "scenario": "review operator packet",
+      "cases": 36,
+      "blocks": 4,
+      "reviews": 5,
+      "mean_severity": 2.556,
+      "mean_score": 0.4027,
+      "top_evidence_id": "ev_0143",
+      "recommended_action": "accept only if decision claims cite fixture evidence"
     }
   ],
   "highest_risk": {
-    "scenario": "mimos evidence replay",
+    "scenario": "evidence replay",
     "cases": 36,
     "blocks": 4,
     "reviews": 5,
     "mean_severity": 2.611,
-    "mean_score": 0.4084,
+    "mean_score": 0.402,
     "top_evidence_id": "ev_0044",
     "recommended_action": "block release until cited evidence is regenerated"
   }

@@ -1,12 +1,12 @@
 # Cite Or Lie
 
-A grounded citation auditor for AI answer engines: every claimed citation in a Mimos report is verified against the answer engine's own retrieval trace (when available) and a deterministic re prompt protocol, returning a per citation (grounded | memorized | hallucinated) verdict with confidence — the compliance substrate AEO has been missing.
+A grounded citation auditor for AI answer engines: every claimed citation in a Cite Or Lie report is verified against the answer engine's own retrieval trace (when available) and a deterministic re prompt protocol, returning a per citation (grounded | memorized | hallucinated) verdict with confidence — the compliance substrate AEO has been missing.
 
 ![Cite Or Lie working dashboard](outputs/project_working.svg)
 
 ## Why it exists
 
-Every AEO tool — including Mimos — has the same hidden bug: when an LLM cites a domain, it might be citing (a) a retrieval surfaced by the answer engine's grounding (Bing / Perplexity index), (b) a training set memorization, or (c) a generation hallucination with a plausible looking URL. For a regulated wealth management or telehealth firm, distinction.
+Every AEO tool — including Cite Or Lie — has the same hidden bug: when an LLM cites a domain, it might be citing (a) a retrieval surfaced by the answer engine's grounding (Bing / Perplexity index), (b) a training set memorization, or (c) a generation hallucination with a plausible looking URL. For a regulated wealth management or telehealth firm, distinction.
 
 The project is intentionally built as a local replay harness instead of a slide. It creates fixtures, plants realistic failure modes, produces citation-locked evidence, and turns the result into a dashboard a reviewer can inspect without credentials or hosted services.
 
@@ -22,14 +22,14 @@ The project is intentionally built as a local replay harness instead of a slide.
 
 ## Signals it measures
 
-- `mimos coverage`
+- `Cite Or Lie coverage`
 - `hidden risk`
 - `cites precision`
 - `domain latency`
 
 ## Failure modes it plants
 
-- mimos drift
+- Cite Or Lie drift
 - hidden gap
 - cites misroute
 - domain blindspot
@@ -52,16 +52,6 @@ uv run ruff check .
 - `outputs/decision_report.md`
 - `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
-
-## Sources
-
-- https://www.ycombinator.com/companies/mimos
-- https://www.startuphub.ai/startups/mimos/
-- https://www.fondo.com/blog/mimos-launches
-- https://www.linkedin.com/in/michael-korovkin/
-- https://www.linkedin.com/in/rohit-sirosh/
-- https://aiclicks.io/blog/best-ai-search-monitoring-tools-for-chatgpt
-- https://cloud.google.com/vertex-ai/generative-ai/docs/grounding/overview
 
 ## Boundary
 

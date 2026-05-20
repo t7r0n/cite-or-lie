@@ -1,7 +1,7 @@
 [project]
 name = "cite-or-lie"
 version = "0.1.0"
-description = "A grounded citation auditor for AI answer engines: every claimed citation in a Mimos report is verified against the answer engine's own retr"
+description = "A grounded citation auditor for AI answer engines: every claimed citation in a Cite Or Lie report is verified against th"
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [
