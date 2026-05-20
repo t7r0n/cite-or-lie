@@ -1,0 +1,69 @@
+{
+  "company": "Mimos",
+  "repo": "cite-or-lie",
+  "terms": [
+    "mimos",
+    "hidden",
+    "cites",
+    "domain",
+    "might",
+    "citing",
+    "retrieval",
+    "surfaced"
+  ],
+  "metrics": [
+    "mimos_coverage",
+    "hidden_risk",
+    "cites_precision",
+    "domain_latency"
+  ],
+  "failure_modes": [
+    "mimos_drift",
+    "hidden_gap",
+    "cites_misroute",
+    "domain_blindspot"
+  ],
+  "evidence_density": 17.75,
+  "pressure_index": 0.3167,
+  "blocked_share": 0.0972,
+  "review_share": 0.1319,
+  "top_leverage_points": [
+    {
+      "rank": 1,
+      "scenario": "mimos evidence replay",
+      "metric": "mimos_coverage",
+      "failure_mode": "mimos_drift",
+      "evidence": "ev_0044",
+      "operator_action": "block release until cited evidence is regenerated",
+      "severity": 2.611
+    },
+    {
+      "rank": 2,
+      "scenario": "domain operator packet",
+      "metric": "hidden_risk",
+      "failure_mode": "hidden_gap",
+      "evidence": "ev_0055",
+      "operator_action": "accept only if decision claims cite fixture evidence",
+      "severity": 2.556
+    },
+    {
+      "rank": 3,
+      "scenario": "cites regression harness",
+      "metric": "cites_precision",
+      "failure_mode": "cites_misroute",
+      "evidence": "ev_0110",
+      "operator_action": "open a regression issue with trace and benchmark delta",
+      "severity": 2.528
+    },
+    {
+      "rank": 4,
+      "scenario": "hidden boundary probe",
+      "metric": "domain_latency",
+      "failure_mode": "domain_blindspot",
+      "evidence": "ev_0121",
+      "operator_action": "route to reviewer with evidence packet",
+      "severity": 2.528
+    }
+  ],
+  "readout": "Mimos gets a local, deterministic pressure test around mimos, hidden, and cites. The useful part is not the dashboard; it is the repeatable evidence path from fixture to failure to operator action."
+}
