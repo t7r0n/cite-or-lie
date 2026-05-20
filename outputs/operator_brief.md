@@ -1,6 +1,6 @@
 # Operator Brief: Mimos
 
-Mimos gets a local, deterministic pressure test around mimos, hidden, and cites. The useful part is not the dashboard; it is the repeatable evidence path from fixture to failure to operator action.
+Mimos gets a local, deterministic pressure test around mimos, hidden, and cites. The useful part is the repeatable evidence path from fixture to failure to operator action.
 
 ## Highest-leverage checks
 
