@@ -8,9 +8,9 @@ Every AEO tool - including Mimos - has the same hidden bug: when an LLM cites a 
 
 ## What It Builds
 
-- Replays synthetic `every` and `including` cases against the project's evidence rules.
-- Scores `every_coverage`, `including_risk`, and `mimos_precision` so regressions are visible in CSV and JSON.
-- Plants `every drift` and `including gap` failures as negative controls.
+- Replays synthetic `mimos` and `hidden` cases against the project's evidence rules.
+- Scores `mimos_coverage`, `hidden_risk`, and `cites_precision` so regressions are visible in CSV and JSON.
+- Plants `mimos drift` and `hidden gap` failures as negative controls.
 - Writes citation-locked decision claims; unsupported claims fail verification.
 - Exports a review dashboard and demo pack for `cite-or-lie` without hosted services.
 
@@ -29,6 +29,9 @@ uv run ruff check .
 - `outputs/scenario_report.csv`
 - `outputs/decision_report.md`
 - `outputs/evidence_packet.md`
+- `outputs/domain_rubric.json`
+- `outputs/failure_matrix.md`
+- `outputs/trace_graph.mmd`
 - `outputs/dashboard.html`
 - `outputs/demo_pack.zip`
 

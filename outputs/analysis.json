@@ -9,74 +9,54 @@
   },
   "clusters": [
     {
-      "scenario": "every drift",
-      "cases": 24,
-      "blocks": 2,
-      "reviews": 3,
-      "mean_severity": 2.5,
-      "mean_score": 0.3885,
-      "top_evidence_id": "ev_0022",
-      "recommended_action": "block release until replay is understood"
-    },
-    {
-      "scenario": "every evidence recall",
-      "cases": 24,
+      "scenario": "cites regression harness",
+      "cases": 36,
       "blocks": 3,
-      "reviews": 3,
-      "mean_severity": 1.875,
-      "mean_score": 0.2935,
-      "top_evidence_id": "ev_0132",
-      "recommended_action": "block release until replay is understood"
+      "reviews": 5,
+      "mean_severity": 2.528,
+      "mean_score": 0.3874,
+      "top_evidence_id": "ev_0110",
+      "recommended_action": "open a regression issue with trace and benchmark delta"
     },
     {
-      "scenario": "hidden policy boundary",
-      "cases": 24,
-      "blocks": 2,
-      "reviews": 3,
-      "mean_severity": 1.708,
-      "mean_score": 0.2691,
-      "top_evidence_id": "ev_0033",
-      "recommended_action": "block release until replay is understood"
+      "scenario": "domain operator packet",
+      "cases": 36,
+      "blocks": 4,
+      "reviews": 5,
+      "mean_severity": 2.556,
+      "mean_score": 0.4116,
+      "top_evidence_id": "ev_0055",
+      "recommended_action": "accept only if decision claims cite fixture evidence"
     },
     {
-      "scenario": "including gap",
-      "cases": 24,
+      "scenario": "hidden boundary probe",
+      "cases": 36,
       "blocks": 3,
-      "reviews": 2,
-      "mean_severity": 3.333,
-      "mean_score": 0.5458,
-      "top_evidence_id": "ev_0011",
-      "recommended_action": "block release until replay is understood"
-    },
-    {
-      "scenario": "including reviewer handoff",
-      "cases": 24,
-      "blocks": 2,
       "reviews": 4,
-      "mean_severity": 2.583,
-      "mean_score": 0.4047,
+      "mean_severity": 2.528,
+      "mean_score": 0.3866,
       "top_evidence_id": "ev_0121",
-      "recommended_action": "block release until replay is understood"
+      "recommended_action": "route to reviewer with evidence packet"
     },
     {
-      "scenario": "mimos failure replay",
-      "cases": 24,
-      "blocks": 2,
-      "reviews": 4,
-      "mean_severity": 3.333,
-      "mean_score": 0.5156,
+      "scenario": "mimos evidence replay",
+      "cases": 36,
+      "blocks": 4,
+      "reviews": 5,
+      "mean_severity": 2.611,
+      "mean_score": 0.4084,
       "top_evidence_id": "ev_0044",
-      "recommended_action": "block release until replay is understood"
+      "recommended_action": "block release until cited evidence is regenerated"
     }
   ],
   "highest_risk": {
-    "scenario": "including gap",
-    "cases": 24,
-    "blocks": 3,
-    "reviews": 2,
-    "mean_severity": 3.333,
-    "mean_score": 0.5458,
-    "top_evidence_id": "ev_0011",
-    "recommended_action": "block release until replay is understood"
+    "scenario": "mimos evidence replay",
+    "cases": 36,
+    "blocks": 4,
+    "reviews": 5,
+    "mean_severity": 2.611,
+    "mean_score": 0.4084,
+    "top_evidence_id": "ev_0044",
+    "recommended_action": "block release until cited evidence is regenerated"
   }
 }

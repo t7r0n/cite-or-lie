@@ -1,0 +1,65 @@
+{
+  "repo": "cite-or-lie",
+  "company": "Mimos",
+  "rubric_axes": [
+    {
+      "axis": "mimos_coverage",
+      "failures": [
+        "mimos_drift"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "hidden_risk",
+      "failures": [
+        "hidden_gap"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "cites_precision",
+      "failures": [
+        "cites_misroute"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "domain_latency",
+      "failures": [
+        "domain_blindspot"
+      ],
+      "evidence_required": true
+    }
+  ],
+  "archetypes": [
+    {
+      "name": "mimos evidence replay",
+      "trigger": "mimos signal changes while hidden context is stale",
+      "expected": "block release until cited evidence is regenerated"
+    },
+    {
+      "name": "hidden boundary probe",
+      "trigger": "hidden handoff crosses a policy or trust boundary",
+      "expected": "route to reviewer with evidence packet"
+    },
+    {
+      "name": "cites regression harness",
+      "trigger": "cites behavior regresses against the last accepted fixture",
+      "expected": "open a regression issue with trace and benchmark delta"
+    },
+    {
+      "name": "domain operator packet",
+      "trigger": "domain output needs a human-readable audit packet",
+      "expected": "accept only if decision claims cite fixture evidence"
+    }
+  ],
+  "sources_used": [
+    "https://www.ycombinator.com/companies/mimos",
+    "https://www.startuphub.ai/startups/mimos/",
+    "https://www.fondo.com/blog/mimos-launches",
+    "https://www.linkedin.com/in/michael-korovkin/",
+    "https://www.linkedin.com/in/rohit-sirosh/",
+    "https://aiclicks.io/blog/best-ai-search-monitoring-tools-for-chatgpt",
+    "https://cloud.google.com/vertex-ai/generative-ai/docs/grounding/overview"
+  ]
+}
