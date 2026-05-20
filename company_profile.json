@@ -5,8 +5,8 @@
   "package": "cite_or_lie",
   "cli": "cite-or-lie",
   "title": "Cite Or Lie",
-  "problem": "Every AEO tool - including Mimos - has the same hidden bug: when an LLM cites a domain, it might be citing (a) a retrieval surfaced by the answer engine's grounding (Bing / Perplexity index), (b) a training set memorization, or (c) a generation hallucination with a plausible looking URL. For a regulated wealth management or telehealth firm, distinction (a) vs. (c) is the difference between \"we're winning AI search\" and \"we have a compliance incident in the making.",
-  "direction": "A grounded citation auditor for AI answer engines: every claimed citation in a Mimos report is verified against the answer engine's own retrieval trace (when available) and a deterministic re prompt protocol, returning a per citation (grounded | memorized | hallucinated) verdict with confidence - the compliance substrate AEO has been missing.",
+  "problem": "Every AEO tool \u2014 including Mimos \u2014 has the same hidden bug: when an LLM cites a domain, it might be citing (a) a retrieval surfaced by the answer engine's grounding (Bing / Perplexity index), (b) a training set memorization, or (c) a generation hallucination with a plausible looking URL. For a regulated wealth management or telehealth firm, distinction (a) vs. (c) is the difference between \"we're winning AI search\" and \"we have a compliance incident in the making.",
+  "direction": "A grounded citation auditor for AI answer engines: every claimed citation in a Mimos report is verified against the answer engine's own retrieval trace (when available) and a deterministic re prompt protocol, returning a per citation (grounded | memorized | hallucinated) verdict with confidence \u2014 the compliance substrate AEO has been missing.",
   "why": "cite or lie won't. It positions Mimos's compliance moat as measurable. Until now the compliance pitch is qualitative. The grounded citation verdict turns it into a defensible number a GC can sign off on.",
   "terms": [
     "mimos",
